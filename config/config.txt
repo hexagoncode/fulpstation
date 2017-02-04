@@ -1,5 +1,5 @@
 ## Server name: This appears at the top of the screen in-game. Remove the # infront of SERVERNAME and replace 'tgstation' with the name of your choice
-SERVERNAME Yogstation 13 [99% LAGFREE!][Custom map!]
+SERVERNAME Fulpstation
 
 ## Station name: The name of the station as it is referred to in-game. If commented out, the game will generate a random name instead.
 # STATIONNAME Space Station 13
@@ -24,7 +24,7 @@ ADMIN_LEGACY_SYSTEM
 ## REQUIRES the database set up to work. Keep it hashed if you don't have a database set up.
 ## NOTE: If you have just set-up the database keep this DISABLED, as player age is determined from the first time they connect to the server with the database up. If you just set it up, it means
 ## you have noone older than 0 days, since noone has been logged yet. Only turn this on once you have had the database up for 30 days.
-USE_AGE_RESTRICTION_FOR_JOBS
+#USE_AGE_RESTRICTION_FOR_JOBS
 
 ## log OOC channel
 LOG_OOC
