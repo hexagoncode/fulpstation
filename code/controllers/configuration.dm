@@ -66,7 +66,7 @@
 	var/wikiurl = "https://wiki.yogstation.net/" // Default wiki link.
 	var/forumurl = "https://www.yogstation.net/" //default forums
 	var/rulesurl = "http://forums.yogstation.net/index.php?pages/rules/" // default rules
-	var/githuburl = "https://github.com/yogstation13/yogstation" //default github
+	var/githuburl = "https://github.com/TheSwain/fulpstation" //default github
 
 	var/forbid_singulo_possession = 0
 	var/useircbot = 0

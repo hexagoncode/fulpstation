@@ -35,7 +35,7 @@
 			output += "<p><span class='linkOn'><b>Ready</b></span> <a href='byond://?src=\ref[src];ready=0'>X</a></p>"
 		else
 			output += "<p><a href='byond://?src=\ref[src];ready=1'>Ready</a> <span class='linkOff'>X</span></p>"
-			
+
 	else
 		output += "<p><a href='byond://?src=\ref[src];manifest=1'>View the Crew Manifest</A></p>"
 		if(joining_forbidden)
@@ -83,7 +83,7 @@
 		client.player_age = 0 // set it from -1 to 0 so the job selection code doesn't have a panic attack
 	var/current_agree = client.prefs.agree
 	var/output = ""
-	output += "Welcome [brandnew ? "" : "back "]to Yogstation!<br>"
+	output += "Welcome [brandnew ? "" : "back "]to Fulpstation<br>"
 	if(brandnew)
 		output += "This appears to be your first time here. Please take a moment to read the server rules.<br>You will not be able to join this round. Take this time to acknowledge yourself with the map, rules, and playstyle.<br>Don't forget to set up your character preferences!<br>"
 	else if(current_agree == -1)

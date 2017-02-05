@@ -411,9 +411,9 @@ var/list/donators = list()
 
 	s += "<b>[station_name()]</b>";
 	s += " ("
-	s += "<a href=\"https://www.yogstation.net\">" //Change this to wherever you want the hub to link to.
+	s += "<a href=\"https://www.fulpstation.com\">" //Change this to wherever you want the hub to link to.
 //	s += "[game_version]"
-	s += "Yogstation.net"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "Fulpstation.com"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
 	s += ")"
 

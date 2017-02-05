@@ -63,9 +63,9 @@ var/datum/subsystem/ticker/ticker
 /datum/subsystem/ticker/New()
 	NEW_SS_GLOBAL(ticker)
 
-	login_music = pickweight(list('sound/ambience/title2.ogg' = 33, 'sound/ambience/title1.ogg' = 33, 'sound/ambience/title3.ogg' =33, 'sound/ambience/clown.ogg' = 1)) // choose title music!
-	if(SSevent.holidays && SSevent.holidays[APRIL_FOOLS])
-		login_music = 'sound/ambience/clown.ogg'
+	login_music = pickweight(list('sound/ambience/title1.ogg' = 33, 'sound/ambience/title2.ogg' = 33, 'sound/ambience/title3.ogg' = 34))//, 'sound/ambience/title3.ogg' =33, 'sound/ambience/clown.ogg' = 1)) // choose title music!
+	//if(SSevent.holidays && SSevent.holidays[APRIL_FOOLS])
+	//	login_music = 'sound/ambience/clown.ogg'
 
 /datum/subsystem/ticker/Initialize(timeofday)
 	if(!syndicate_code_phrase)

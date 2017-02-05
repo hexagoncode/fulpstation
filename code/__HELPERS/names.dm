@@ -12,10 +12,10 @@ var/church_name = null
 
 	var/name = ""
 
-	name += pick("Holy", "United", "First", "Second", "Last")
+	name += pick("Holy", "United", "First", "Second", "Last", "Grand", "Final", "Original")
 
 	if (prob(20))
-		name += " Space"
+		name += " Fulp"//" Space"
 
 	name += " " + pick("Church", "Cathedral", "Body", "Worshippers", "Movement", "Witnesses")
 	name += " of [religion_name()]"
@@ -74,10 +74,10 @@ var/religion_name = null
 	var/new_station_name = ""
 
 	//Rare: Pre-Prefix
-	if (prob(10))
-		name = pick("Imperium", "Heretical", "Cuban", "Psychic", "Elegant", "Common", "Uncommon", "Rare", "Unique", "Houseruled", "Religious", "Atheist", "Traditional", "Houseruled", "Mad", "Super", "Ultra", "Secret", "Top Secret", "Deep", "Death", "Zybourne", "Central", "Main", "Government", "Uoi", "Fat", "Automated", "Experimental", "Augmented")
-		new_station_name = name + " "
-		name = ""
+	//if (prob(10))
+	//	name = pick("Imperium", "Heretical", "Cuban", "Psychic", "Elegant", "Common", "Uncommon", "Rare", "Unique", "Houseruled", "Religious", "Atheist", "Traditional", "Houseruled", "Mad", "Super", "Ultra", "Secret", "Top Secret", "Deep", "Death", "Zybourne", "Central", "Main", "Government", "Uoi", "Fat", "Automated", "Experimental", "Augmented")
+	//	new_station_name = name + " "
+	//	name = ""
 
 	// Prefix
 	for(var/holiday_name in SSevent.holidays)
@@ -87,12 +87,17 @@ var/religion_name = null
 		name = holiday.getStationPrefix()
 		//get normal name
 	if(!name)
-		name = pick("", "Stanford", "Dorf", "Alium", "Prefix", "Clowning", "Aegis", "Ishimura", "Scaredy", "Death-World", "Mime", "Honk", "Rogue", "MacRagge", "Ultrameens", "Safety", "Paranoia", "Explosive", "Neckbear", "Donk", "Muppet", "North", "West", "East", "South", "Slant-ways", "Widdershins", "Rimward", "Expensive", "Procreatory", "Imperial", "Unidentified", "Immoral", "Carp", "Ork", "Pete", "Control", "Nettle", "Aspie", "Class", "Crab", "Fist","Corrogated","Skeleton","Race", "Fatguy", "Gentleman", "Capitalist", "Communist", "Bear", "Beard", "Derp", "Space", "Spess", "Star", "Moon", "System", "Mining", "Neckbeard", "Research", "Supply", "Military", "Orbital", "Battle", "Science", "Asteroid", "Home", "Production", "Transport", "Delivery", "Extraplanetary", "Orbital", "Correctional", "Robot", "Hats", "Pizza")
+		name = pick("Kurt","Stu","Willy","Willie","Geeves","Bateman","James","Axel","Bruno","Caleb","Dale","Tucker","Felix","Fabian","Grant","Hal","Ives","Jarvis","T.J.","Nash","Gavyn","Don","Bronson","Heston","Charleton","Clint","Eastwood","Graves","Stumbles","Liam","Hangar", "Jordan","Duane","Jacob","Stamper","Fulp","Bandelin","Tanner","Brick","Scooter","Roland","Blade","Logan","Xavier","Po","Thor","Odin","Loki","Zeus","Gil","Hermes","Hercules","Mars","Ares","Hades","Apollo","Frenchie","Aurelius","Zeke","Yale","Wade", "Vincent","Vincenzo","Vance","Uistean","Urien","Chuckles","Houston","Thorpe","Shawn","Biddle","Johanson","Francis","Drake","Raleigh","Walter","Walt","Quade","Pedro","Oliver","Neal","Manuel","Landon","Keegan","Butch","Buck","Kane","Jasper","Smalls", "Ponyboy","Godzilla","Sailor","Charles","Mabutu","Chumbo","Ching","Mr.Beautiful","Johnny","Sticky","Duncan","Malcom","Malone","Professor","Coach","Ellis","Leonardo","Michelangelo","Donatello","Raphael","Oney","O’Neal","Leon","Norton","Jacob", "Archer","Fletcher","Grisham","Graham","Marcus","Watson","Holmes","Blake","Cartiff","Ulysses","Marty","Rick","Sanchez","Morty","Lloyd","Emmet","Tiernan","Tiberius","Thadeus","Max","Holden","Hayden","Hadrian","Claus","Claudius","Caesar","Fernando", "Hernando","Gooseman","Wheeler","Ma-Ti","Kwame","Captain","Lee","Lucky","King","Spades","Diamonds","Clubs","Swords","Hearts","Wildboy","Cadet","Niko","Roman","Brutus","Spartacus","Clayton","Kleeton","Cleetus","Aden","Abram","Lee","Colby","Maynard", "Jonesy","Chauncey","Jack","Harvey","Hugh","Tobias","Phoenix","Simon","Alucard","Drachen","Dragon", "Serpent", "Dracul", "Alistar", "Cromley", "Cromwell","Edgar","Edwin","Reuben","Jonas","Dylan","Kai","Nigel","Percy","Bruce","Alfie","Gordon", "Lebowski","Walter","Donnie","Frank","Leo","Deadeye","Skittles","Mr.E","Arnold","Chuck","Chucky","Sly","Statham","Jet","Dirk","Matches","Sandman","Quintus","Ryu","Moe","Curly","Shemp","Shep","Shepherd","Shepard","Larry","Ricky","Addison","Adonis","Ajay", "Ari","Cale","Carlo","Castle","Dalvin","Ethan","Eli","Elias","Ezekiel","Fox","Snake","Mordecai","Wolf","Garett","Gideon","Rocco","Judah","Judas","Mick","Sylas","Jan","Lionel","Sabin","Setzer","Spencer","Waylon","Wyatt","Victor","Malakai","Fingers", "Tiny","8-Ball","Dingus","Rocky","Slade","Wilson", "Zach","Zachariah","Grupert","Rupert","Hulius","Julius","Kaiser","Pauly","Gaylord","Crumbs","Crumbles","Sammy","Shipwreck","Duck","Ducky","Ape","Hungry","Viper","Toad","Badger","Reek","Damian","Dorito","Pops","Sam","Dean","Bobby","Crowley","Abaddon", "Stooley","Gopher","Squirrel","Stanley","Ghost","Mr.Spooks","Ghastly","Zombie","Goblin","Lothar","Spaniard","Winston","Church","Churchill","Priest","Bishop","Danks","Bilbo","Godfried","Jeffe","Biggy","Lewis","Louie","Drumpf","Booger","Trump", "Bernie","Metatron","Soupy","Pyotr","Marius","Grendel","Demarcus","Urgurth","Telwik","Hills","Percival","Drogan","Aloysius","Armstrong","Goku","Krillin","Vegeta","Picollo","Yamcha","Garlic","Onion","Taters", "Celery Man","Rudd","Tayne","Oyster", "Tate","Heat","Rabbit","Squid","Porker","Halibut","Nerves","Nelson","Rowan","Bob","Mikey","Chill","Lounge","Specs","Speedy","Rubbers","Bonkers","Party","Scurvy","Chunky","Fruity","Salty","Pepper","Puppy","Doggy","Kitty","Reginald","Reggie","Clumps", "Sparkles","Ryan","Steven","Chester","Kristof","Vlad","Godmur","Citsymon","Freekill","Bonk","Honk")
+	//	SWAIN CHANGE: name = pick("", "Stanford", "Dorf", "Alium", "Prefix", "Clowning", "Aegis", "Ishimura", "Scaredy", "Death-World", "Mime", "Honk", "Rogue", "MacRagge", "Ultrameens", "Safety", "Paranoia", "Explosive", "Neckbear", "Donk", "Muppet", "North", "West", "East", "South", "Slant-ways", "Widdershins", "Rimward", "Expensive", "Procreatory", "Imperial", "Unidentified", "Immoral", "Carp", "Ork", "Pete", "Control", "Nettle", "Aspie", "Class", "Crab", "Fist","Corrogated","Skeleton","Race", "Fatguy", "Gentleman", "Capitalist", "Communist", "Bear", "Beard", "Derp", "Space", "Spess", "Star", "Moon", "System", "Mining", "Neckbeard", "Research", "Supply", "Military", "Orbital", "Battle", "Science", "Asteroid", "Home", "Production", "Transport", "Delivery", "Extraplanetary", "Orbital", "Correctional", "Robot", "Hats", "Pizza")
 	if(name)
 		new_station_name += name + " "
 
 	// Suffix
-	name = pick("Station", "Fortress", "Frontier", "Suffix", "Death-trap", "Space-hulk", "Lab", "Hazard","Spess Junk", "Fishery", "No-Moon", "Tomb", "Crypt", "Hut", "Monkey", "Bomb", "Trade Post", "Fortress", "Village", "Town", "City", "Edition", "Hive", "Complex", "Base", "Facility", "Depot", "Outpost", "Installation", "Drydock", "Observatory", "Array", "Relay", "Monitor", "Platform", "Construct", "Hangar", "Prison", "Center", "Port", "Waystation", "Factory", "Waypoint", "Stopover", "Hub", "HQ", "Office", "Object", "Fortification", "Colony", "Planet-Cracker", "Roost", "Fat Camp")
+	if (prob(50)) // SWAIN START CHANGES
+		name = "Station"
+	else
+		name = pick ("Hub", "Base", "Moon", "Channel", "Lab", "Star", "Complex", "Habitat", "Facility", "Zone", "Point", "Area", "System")
+	//name = pick("Station", "Fortress", "Frontier", "Suffix", "Death-trap", "Space-hulk", "Lab", "Hazard","Spess Junk", "Fishery", "No-Moon", "Tomb", "Crypt", "Hut", "Monkey", "Bomb", "Trade Post", "Fortress", "Village", "Town", "City", "Edition", "Hive", "Complex", "Base", "Facility", "Depot", "Outpost", "Installation", "Drydock", "Observatory", "Array", "Relay", "Monitor", "Platform", "Construct", "Hangar", "Prison", "Center", "Port", "Waystation", "Factory", "Waypoint", "Stopover", "Hub", "HQ", "Office", "Object", "Fortification", "Colony", "Planet-Cracker", "Roost", "Fat Camp")
 	new_station_name += name + " "
 
 	// ID Number
