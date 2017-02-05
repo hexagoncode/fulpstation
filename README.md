@@ -1,12 +1,6 @@
-##Yogstation
+##Fulpstation
 
-[![Build Status](https://travis-ci.org/yogstation13/yogstation.svg?branch=master)](https://travis-ci.org/yogstation13/yogstation)
-Copyright (C) Yogstation 2013-2016
-
-**Website:** https://yogstation.net <BR>
-**Code:** https://github.com/yogstation13/yogstation <BR>
-**Wiki:** https://wiki.yogstation.net <BR>
-**Discord:** https://discord.gg/0keg6hQH05Ha8OfO<BR>
+###  ***Transition from old Yogstation README still in progress.***
 
 
 ##DOWNLOADING
@@ -118,7 +112,8 @@ To enable an away mission open fileList.txt in the _maps/RandomZLevels directory
 
 ##SQL SETUP
 
-The SQL backend requires a MySQL server. SQL is required for the library, stats tracking, admin notes, and job-only bans, among other features, mostly related to server administration. Your server details go in /config/dbconfig.txt, and the SQL schema is in /SQL/tgstation_schema.sql and /SQL/tgstation_schema_prefix.sql depending on if you want table prefixes.  More detailed setup instructions are located here: http://www.tgstation13.org/wiki/Downloading_the_source_code#Setting_up_the_database
+The SQL backend requires a MySQL server. SQL is required for the library, stats tracking, admin notes, and job-only bans, among other features, mostly related to server administration. Your server details go in /config/dbconfig.txt (please rename or copy dbconfig.txt.example to dbconfig.txt if none is present), and the SQL schema is in /SQL/tgstation_schema.sql and /SQL/tgstation_schema_prefix.sql depending on if you want table prefixes.
+
 
 ##IRC BOT SETUP
 
