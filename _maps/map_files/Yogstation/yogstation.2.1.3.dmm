@@ -2078,7 +2078,7 @@
 "aOe" = (/turf/open/floor/carpet,/area/hallway/secondary/entry)
 "aOf" = (/obj/structure/chair/comfy/beige{dir = 8},/turf/open/floor/plasteel{icon_state = "grimy"},/area/hallway/secondary/entry)
 "aOg" = (/obj/machinery/vending/coffee,/turf/open/floor/plasteel{icon_state = "dark"},/area/hallway/secondary/entry)
-"aOh" = (/turf/open/floor/goonplaque{desc = "You see an image of thin middle-aged man wearing a tight black t-shirt with an image of a tank on it.  He is smiling and giving a thumbs up, reminding you that everything will be okay.  Below this image is an inscription.  \"This station is dedicated to the memory of Tom Fulp, Breaker of New Grounds and Weaver of Dreams.\""},/area/hallway/secondary/entry)
+"aOh" = (/turf/open/floor/goonplaque{desc = "You see an image of thin middle-aged man wearing a tight black t-shirt with an image of a tank on it.  He is smiling and giving a thumbs up, reminding you that everything will be okay.  Below this image is an inscription.  \"This station is dedicated to the memory of Captain Thomas Fulp, breaker of new grounds and weaver of dreams.  Though his ship lies in ruin at the rim of the Pico Nebula, his legacy lives on through us all.\""},/area/hallway/secondary/entry)
 "aOi" = (/obj/machinery/door/firedoor/border_only{dir = 4;name = "Firelock East"},/turf/open/floor/plasteel,/area/hallway/secondary/entry)
 "aOj" = (/obj/machinery/navbeacon{codes_txt = "patrol;next_patrol=CHW";location = "Lockers"},/turf/open/floor/plasteel,/area/hallway/primary/port)
 "aOk" = (/obj/structure/cable/yellow{d1 = 2;d2 = 4;icon_state = "2-4"},/turf/open/floor/plasteel,/area/hallway/primary/port)
