@@ -105,7 +105,7 @@ NORESPAWN
 # DONT_DEL_NEWMOB
 
 ## set a hosted by name for unix platforms
-HOSTEDBY Yogstation13-bot
+HOSTEDBY Tomamoto
 
 ## Set to jobban "Guest-" accounts from Captain, HoS, HoP, CE, RD, CMO, Warden, Security, Detective, and AI positions.
 ## Set to 1 to jobban them from those positions, set to 0 to allow them.
@@ -135,19 +135,19 @@ CHECK_RANDOMIZER
 # SERVER ss13.example.com:2506
 
 ## forum address
-FORUMURL http://yogstation.net
+FORUMURL http://www.fulpstation.com
 
 ## Wiki address
 # WIKIURL http://www.tgstation13.org/wiki
 
 ##Rules address
-RULESURL http://forums.yogstation.net/index.php?pages/rules/
+RULESURL http://rules.fulpstation.com
 
 ##Github address
-GITHUBURL https://www.github.com/yogstation13/yogstation
+GITHUBURL https://github.com/TheSwain/fulpstation
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
-BANAPPEALS http://forums.yogstation.net/index.php?forms/unban-appeal-form.1/respond
+BANAPPEALS http://www.fulpstation.com
 
 ## In-game features
 ##Toggle for having jobs load up from the .txt

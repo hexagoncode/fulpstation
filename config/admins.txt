@@ -16,3 +16,5 @@ Krinkels	=	SeniorAdmin
 tomamoto	=	SeniorAdmin
 Rumpelgeist	=	SeniorAdmin
 ImpendingRiot	=	SeniorAdmin
+saladata	=	SeniorAdmin
+falconhoof	=	SeniorAdmin

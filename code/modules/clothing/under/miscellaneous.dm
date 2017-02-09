@@ -609,3 +609,12 @@
 	item_state = "ronald"
 	item_color = "ronald"
 	can_adjust = 0
+
+/obj/item/clothing/under/newgrounds
+	name = "newgrounds tank shirt"
+	desc = "A t-shirt with a golden tank printed on the front. The shirt comes in any color you can imagine, so long as the color is black."
+	icon_state = "newgrounds"
+	item_state = "newgrounds"
+	item_color = "newgrounds"
+	can_adjust = 0
+	has_sensor = 0 // 1 is normal crew, 2 cannot be changed such as prison uniform
