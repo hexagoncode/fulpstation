@@ -110,7 +110,7 @@
 
 /client/proc/handle_spam_prevention(message, mute_type)
 	if(config.automute_on && !holder)
-		if(last_message == message && message != null)
+		if(last_message == message && message != "" && message != " "))
 			last_message_count++
 			if(last_message_count >= SPAM_TRIGGER_AUTOMUTE_IDENTICAL)
 				src << "<span class='danger'>You have exceeded the spam filter limit for identical messages. An auto-mute was applied.</span>"
@@ -128,7 +128,7 @@
 			last_message_count = 0
 			last_message = message
 
-		if((world.time - last_message_time) < SPAM_TRIGGER_AUTOMUTE_TIME && message != null)
+		if((world.time - last_message_time) < SPAM_TRIGGER_AUTOMUTE_TIME && message != "" && message != " ")
 			fast_message_count++
 			if(fast_message_count >= SPAM_TRIGGER_AUTOMUTE)
 				src << "<span class='danger'>You have exceeded the spam filter limit for messages in a short time period. An auto-mute was applied.</span>"
