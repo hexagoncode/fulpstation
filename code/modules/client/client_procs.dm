@@ -118,9 +118,9 @@
 				var/admins_online = total_admins_active()
 				if(admins_online == 0)
 					src << "<span class='notice'>Your auto mute will be lifted in 5 minutes due to no admins being online.</span>"
-					sleep(3000)
-					cmd_admin_mute(src, mute_type, 0)
-					src << "<span class='notice'>Your auto mute has been lifted. You may now speak.</span>"
+					spawn(3000)
+						cmd_admin_mute(src, mute_type, 0)
+						src << "<span class='notice'>Your auto mute has been lifted. You may now speak.</span>"
 				return 1
 			if(last_message_count >= SPAM_TRIGGER_WARNING_IDENTICAL)
 				src << "<span class='danger'>You are nearing the spam filter limit for identical messages.</span>"
@@ -136,9 +136,9 @@
 				var/admins_online = total_admins_active()
 				if(admins_online == 0)
 					src << "<span class='notice'>Your auto mute will be lifted in 5 minutes due to no admins being online.</span>"
-					sleep(3000)
-					cmd_admin_mute(src, mute_type, 0)
-					src << "<span class='notice'>Your auto mute has been lifted. You may now speak.</span>"
+					spawn(3000)
+						cmd_admin_mute(src, mute_type, 0)
+						src << "<span class='notice'>Your auto mute has been lifted. You may now speak.</span>"
 				return 1
 			if(fast_message_count >= SPAM_TRIGGER_WARNING)
 				src << "<span class='danger'>You are nearing the spam filter limit for messages in a short time period.</span>"
