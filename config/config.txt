@@ -135,16 +135,16 @@ CHECK_RANDOMIZER
 # SERVER ss13.example.com:2506
 
 ## forum address
-FORUMURL http://yogstation.net
+FORUMURL https://fulpstation.com/
 
 ## Wiki address
-# WIKIURL http://www.tgstation13.org/wiki
+# WIKIURL https://wiki.yogstation.net/
 
 ##Rules address
-RULESURL http://forums.yogstation.net/index.php?pages/rules/
+https://fulpstation.com/showthread.php?tid=1
 
 ##Github address
-GITHUBURL https://www.github.com/yogstation13/yogstation
+GITHUBURL https://github.com/TheSwain/fulpstation
 
 ## Ban appeals URL - usually for a forum or wherever people should go to contact your admins.
 BANAPPEALS http://forums.yogstation.net/index.php?forms/unban-appeal-form.1/respond
