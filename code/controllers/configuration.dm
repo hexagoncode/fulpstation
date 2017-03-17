@@ -64,8 +64,8 @@
 	var/server
 	var/banappeals
 	var/wikiurl = "https://wiki.yogstation.net/" // Default wiki link.
-	var/forumurl = "https://www.yogstation.net/" //default forums
-	var/rulesurl = "http://forums.yogstation.net/index.php?pages/rules/" // default rules
+	var/forumurl = "https://fulpstation.com" //default forums
+	var/rulesurl = "https://fulpstation.com/showthread.php?tid=1" // default rules
 	var/githuburl = "https://github.com/TheSwain/fulpstation" //default github
 
 	var/forbid_singulo_possession = 0
