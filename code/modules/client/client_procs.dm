@@ -119,9 +119,9 @@
 				if(admins_online == 0)
 					src << "<span class='notice'>Your auto mute will be lifted in 5 minutes due to no admins being online.</span>"
 					spawn(3000)
-					var/datum/preferences/P
-					P = src.prefs
-					P.muted &= ~mute_type
+						var/datum/preferences/P
+						P = src.prefs
+						P.muted &= ~mute_type
 						src << "<span class='notice'>Your auto mute has been lifted. You may now speak.</span>"
 				return 1
 			if(last_message_count >= SPAM_TRIGGER_WARNING_IDENTICAL)
